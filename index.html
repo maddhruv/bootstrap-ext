@@ -1,0 +1,429 @@
+---
+layout: default
+title: Home
+description: Give Another Wing to your Website
+isHome: true
+---
+
+<section class="bs-docs-section">
+  <h1 id="overview" class="page-header">Overview</h1>
+
+  <blockquote>
+    Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+  </blockquote>
+  This Extension provides another big wing and addition to you websites and applications.
+  <h3 id="features">Features</h3>
+
+  <ul>
+    <li>Responsive Bootstrap theme</li>
+    <li>Served over fast GitHub CDN</li>
+    <li>Multi-browser and platform support</li>
+    <li>Automatic Cache</li>
+    <li>Easily Customizable</li>
+    <li>Easy to Install</li>
+  </ul>
+
+  <!--<h3 id="examples">Examples</h3>-->
+</section>
+
+
+<section class="bs-docs-section">
+  <h1 id="installation" class="page-header">Installation</h1>
+
+  <h2 id="install-jekyll">Download the zip</h2>
+  <p>
+    <a href="https://codeload.github.com/midhruvjaink/bootstrap-ext/zip/master">Download</a> the zipped folder and copy the lib folder contents into
+    your sites' root folder.
+  </p>
+
+  <h2 id="configuration">Bootstrap Extension CDN</h2>
+  <p>Just use these CDN links</p>
+  <!-- @formatter:off -->
+  {% highlight html %}
+  <!-- Colors Bootstrap Extension -->
+  <link href="https://cdn.rawgit.com/midhruvjaink/bootstrap-ext/master/lib/bootstrap-color.css" rel="stylesheet" />
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.rawgit.com/midhruvjaink/bootstrap-ext/master/lib/bootstrap-color.min.css" rel="stylesheet" />
+
+  <!-- Loaders Bootstrap Extension -->
+  <link href="https://cdn.rawgit.com/midhruvjaink/bootstrap-ext/master/lib/bootstrap-loader.css" rel="stylesheet" />
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.rawgit.com/midhruvjaink/bootstrap-ext/master/lib/bootstrap-loader.min.css" rel="stylesheet" />
+  {% endhighlight %}
+  <!-- @formatter:on -->
+
+</section>
+
+<section class="bs-docs-section">
+  <h1 id="usage" class="page-header">Usage</h1>
+
+  <h2 id="colors">Colors</h2>
+  <p>
+    All HTML tags and controls elements with <code>.color-text</code> can be styled with the color specified and adding extra
+    <code>.text-lighten-1/5</code>, <code>.text-accent-1/5</code> or <code>.text-darken-1/5</code> can lighten  or darken the color respectively.</p>
+
+<!-- @formatter:off -->
+{% highlight html %}
+<div class="red-text text-lighten-3"></div>
+<p class="green-text text-darken-5"></p>
+{% endhighlight %}
+<!-- @formatter:on -->
+
+  <p>
+    Background color or Highlight can also be styled by adding <code>.color-bg</code> class to the HTML element. And similarly
+    the color can be lightened or darkened by adding corresponding <code>.lighten-1/5</code>, <code>.accent-1/5</code> or <code>.darken-1/5</code> classes to the element.
+  </p>
+
+  <!-- @formatter:off -->
+  {% highlight html %}
+  <div class="yellow-bg lighten-2"></div>
+  <p class="purple-bg darken-4"></p>
+  {% endhighlight %}
+  <!-- @formatter:on -->
+
+  <div class="row">
+    <div class="col-sm-3 colors">
+        <div class="red-bg white-text">red-bg</div>
+        <div class="red-bg lighten-5 black-text">red-bg lighten-5</div>
+        <div class="red-bg lighten-4 black-text">red-bg lighten-4</div>
+        <div class="red-bg lighten-3 black-text">red-bg lighten-3</div>
+        <div class="red-bg lighten-2 black-text">red-bg lighten-2</div>
+        <div class="red-bg lighten-1 black-text">red-bg lighten-1</div>
+        <div class="red-bg darken-4 white-text">red-bg darken-4</div>
+        <div class="red-bg darken-3 white-text">red-bg darken-3</div>
+        <div class="red-bg darken-2 white-text">red-bg darken-2</div>
+        <div class="red-bg darken-1 white-text">red-bg darken-1</div>
+        <div class="red-bg accent-4 white-text">red-bg accent-4</div>
+        <div class="red-bg accent-3 white-text">red-bg accent-3</div>
+        <div class="red-bg accent-2 white-text">red-bg accent-2</div>
+        <div class="red-bg accent-1 white-text">red-bg accent-1</div>
+    </div>
+    <div class="col-sm-3 colors">
+        <div class="pink-bg white-text">pink-bg</div>
+        <div class="pink-bg lighten-5 black-text">pink-bg lighten-5</div>
+        <div class="pink-bg lighten-4 black-text">pink-bg lighten-4</div>
+        <div class="pink-bg lighten-3 black-text">pink-bg lighten-3</div>
+        <div class="pink-bg lighten-2 black-text">pink-bg lighten-2</div>
+        <div class="pink-bg lighten-1 black-text">pink-bg lighten-1</div>
+        <div class="pink-bg darken-4 white-text">pink-bg darken-4</div>
+        <div class="pink-bg darken-3 white-text">pink-bg darken-3</div>
+        <div class="pink-bg darken-2 white-text">pink-bg darken-2</div>
+        <div class="pink-bg darken-1 white-text">pink-bg darken-1</div>
+        <div class="pink-bg accent-4 white-text">pink-bg accent-4</div>
+        <div class="pink-bg accent-3 white-text">pink-bg accent-3</div>
+        <div class="pink-bg accent-2 white-text">pink-bg accent-2</div>
+        <div class="pink-bg accent-1 white-text">pink-bg accent-1</div>
+    </div>
+    <div class="col-sm-3 colors">
+        <div class="purple-bg white-text">purple-bg</div>
+        <div class="purple-bg lighten-5 black-text">purple-bg lighten-5</div>
+        <div class="purple-bg lighten-4 black-text">purple-bg lighten-4</div>
+        <div class="purple-bg lighten-3 black-text">purple-bg lighten-3</div>
+        <div class="purple-bg lighten-2 black-text">purple-bg lighten-2</div>
+        <div class="purple-bg lighten-1 black-text">purple-bg lighten-1</div>
+        <div class="purple-bg darken-4 white-text">purple-bg darken-4</div>
+        <div class="purple-bg darken-3 white-text">purple-bg darken-3</div>
+        <div class="purple-bg darken-2 white-text">purple-bg darken-2</div>
+        <div class="purple-bg darken-1 white-text">purple-bg darken-1</div>
+        <div class="purple-bg accent-4 white-text">purple-bg accent-4</div>
+        <div class="purple-bg accent-3 white-text">purple-bg accent-3</div>
+        <div class="purple-bg accent-2 white-text">purple-bg accent-2</div>
+        <div class="purple-bg accent-1 white-text">purple-bg accent-1</div>
+    </div>
+    <div class="col-sm-3 colors">
+        <div class="deep-purple-bg white-text">deep-purple-bg</div>
+        <div class="deep-purple-bg lighten-5 black-text">deep-purple-bg lighten-5</div>
+        <div class="deep-purple-bg lighten-4 black-text">deep-purple-bg lighten-4</div>
+        <div class="deep-purple-bg lighten-3 black-text">deep-purple-bg lighten-3</div>
+        <div class="deep-purple-bg lighten-2 black-text">deep-purple-bg lighten-2</div>
+        <div class="deep-purple-bg lighten-1 black-text">deep-purple-bg lighten-1</div>
+        <div class="deep-purple-bg darken-4 white-text">deep-purple-bg darken-4</div>
+        <div class="deep-purple-bg darken-3 white-text">deep-purple-bg darken-3</div>
+        <div class="deep-purple-bg darken-2 white-text">deep-purple-bg darken-2</div>
+        <div class="deep-purple-bg darken-1 white-text">deep-purple-bg darken-1</div>
+        <div class="deep-purple-bg accent-4 white-text">deep-purple-bg accent-4</div>
+        <div class="deep-purple-bg accent-3 white-text">deep-purple-bg accent-3</div>
+        <div class="deep-purple-bg accent-2 white-text">deep-purple-bg accent-2</div>
+        <div class="deep-purple-bg accent-1 white-text">deep-purple-bg accent-1</div>
+    </div>
+</div>
+
+<br><br>
+<div class="row">
+  <div class="col-sm-3 colors">
+      <div class="indigo-bg white-text">indigo-bg</div>
+      <div class="indigo-bg lighten-5 black-text">indigo-bg lighten-5</div>
+      <div class="indigo-bg lighten-4 black-text">indigo-bg lighten-4</div>
+      <div class="indigo-bg lighten-3 black-text">indigo-bg lighten-3</div>
+      <div class="indigo-bg lighten-2 black-text">indigo-bg lighten-2</div>
+      <div class="indigo-bg lighten-1 black-text">indigo-bg lighten-1</div>
+      <div class="indigo-bg darken-4 white-text">indigo-bg darken-4</div>
+      <div class="indigo-bg darken-3 white-text">indigo-bg darken-3</div>
+      <div class="indigo-bg darken-2 white-text">indigo-bg darken-2</div>
+      <div class="indigo-bg darken-1 white-text">indigo-bg darken-1</div>
+      <div class="indigo-bg accent-4 white-text">indigo-bg accent-4</div>
+      <div class="indigo-bg accent-3 white-text">indigo-bg accent-3</div>
+      <div class="indigo-bg accent-2 white-text">indigo-bg accent-2</div>
+      <div class="indigo-bg accent-1 white-text">indigo-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="blue-bg white-text">blue-bg</div>
+      <div class="blue-bg lighten-5 black-text">blue-bg lighten-5</div>
+      <div class="blue-bg lighten-4 black-text">blue-bg lighten-4</div>
+      <div class="blue-bg lighten-3 black-text">blue-bg lighten-3</div>
+      <div class="blue-bg lighten-2 black-text">blue-bg lighten-2</div>
+      <div class="blue-bg lighten-1 black-text">blue-bg lighten-1</div>
+      <div class="blue-bg darken-4 white-text">blue-bg darken-4</div>
+      <div class="blue-bg darken-3 white-text">blue-bg darken-3</div>
+      <div class="blue-bg darken-2 white-text">blue-bg darken-2</div>
+      <div class="blue-bg darken-1 white-text">blue-bg darken-1</div>
+      <div class="blue-bg accent-4 white-text">blue-bg accent-4</div>
+      <div class="blue-bg accent-3 white-text">blue-bg accent-3</div>
+      <div class="blue-bg accent-2 white-text">blue-bg accent-2</div>
+      <div class="blue-bg accent-1 white-text">blue-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="light-blue-bg white-text">light-blue-bg</div>
+      <div class="light-blue-bg lighten-5 black-text">light-blue-bg lighten-5</div>
+      <div class="light-blue-bg lighten-4 black-text">light-blue-bg lighten-4</div>
+      <div class="light-blue-bg lighten-3 black-text">light-blue-bg lighten-3</div>
+      <div class="light-blue-bg lighten-2 black-text">light-blue-bg lighten-2</div>
+      <div class="light-blue-bg lighten-1 black-text">light-blue-bg lighten-1</div>
+      <div class="light-blue-bg darken-4 white-text">light-blue-bg darken-4</div>
+      <div class="light-blue-bg darken-3 white-text">light-blue-bg darken-3</div>
+      <div class="light-blue-bg darken-2 white-text">light-blue-bg darken-2</div>
+      <div class="light-blue-bg darken-1 white-text">light-blue-bg darken-1</div>
+      <div class="light-blue-bg accent-4 white-text">light-blue-bg accent-4</div>
+      <div class="light-blue-bg accent-3 white-text">light-blue-bg accent-3</div>
+      <div class="light-blue-bg accent-2 white-text">light-blue-bg accent-2</div>
+      <div class="light-blue-bg accent-1 white-text">light-blue-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="cyan-bg white-text">cyan-bg</div>
+      <div class="cyan-bg lighten-5 black-text">cyan-bg lighten-5</div>
+      <div class="cyan-bg lighten-4 black-text">cyan-bg lighten-4</div>
+      <div class="cyan-bg lighten-3 black-text">cyan-bg lighten-3</div>
+      <div class="cyan-bg lighten-2 black-text">cyan-bg lighten-2</div>
+      <div class="cyan-bg lighten-1 black-text">cyan-bg lighten-1</div>
+      <div class="cyan-bg darken-4 white-text">cyan-bg darken-4</div>
+      <div class="cyan-bg darken-3 white-text">cyan-bg darken-3</div>
+      <div class="cyan-bg darken-2 white-text">cyan-bg darken-2</div>
+      <div class="cyan-bg darken-1 white-text">cyan-bg darken-1</div>
+      <div class="cyan-bg accent-4 white-text">cyan-bg accent-4</div>
+      <div class="cyan-bg accent-3 white-text">cyan-bg accent-3</div>
+      <div class="cyan-bg accent-2 white-text">cyan-bg accent-2</div>
+      <div class="cyan-bg accent-1 white-text">cyan-bg accent-1</div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm-3 colors">
+      <div class="teal-bg white-text">teal-bg</div>
+      <div class="teal-bg lighten-5 black-text">teal-bg lighten-5</div>
+      <div class="teal-bg lighten-4 black-text">teal-bg lighten-4</div>
+      <div class="teal-bg lighten-3 black-text">teal-bg lighten-3</div>
+      <div class="teal-bg lighten-2 black-text">teal-bg lighten-2</div>
+      <div class="teal-bg lighten-1 black-text">teal-bg lighten-1</div>
+      <div class="teal-bg darken-4 white-text">teal-bg darken-4</div>
+      <div class="teal-bg darken-3 white-text">teal-bg darken-3</div>
+      <div class="teal-bg darken-2 white-text">teal-bg darken-2</div>
+      <div class="teal-bg darken-1 white-text">teal-bg darken-1</div>
+      <div class="teal-bg accent-4 white-text">teal-bg accent-4</div>
+      <div class="teal-bg accent-3 white-text">teal-bg accent-3</div>
+      <div class="teal-bg accent-2 white-text">teal-bg accent-2</div>
+      <div class="teal-bg accent-1 white-text">teal-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="green-bg white-text">green-bg</div>
+      <div class="green-bg lighten-5 black-text">green-bg lighten-5</div>
+      <div class="green-bg lighten-4 black-text">green-bg lighten-4</div>
+      <div class="green-bg lighten-3 black-text">green-bg lighten-3</div>
+      <div class="green-bg lighten-2 black-text">green-bg lighten-2</div>
+      <div class="green-bg lighten-1 black-text">green-bg lighten-1</div>
+      <div class="green-bg darken-4 white-text">green-bg darken-4</div>
+      <div class="green-bg darken-3 white-text">green-bg darken-3</div>
+      <div class="green-bg darken-2 white-text">green-bg darken-2</div>
+      <div class="green-bg darken-1 white-text">green-bg darken-1</div>
+      <div class="green-bg accent-4 white-text">green-bg accent-4</div>
+      <div class="green-bg accent-3 white-text">green-bg accent-3</div>
+      <div class="green-bg accent-2 white-text">green-bg accent-2</div>
+      <div class="green-bg accent-1 white-text">green-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="light-green-bg white-text">light-green-bg</div>
+      <div class="light-green-bg lighten-5 black-text">light-green-bg lighten-5</div>
+      <div class="light-green-bg lighten-4 black-text">light-green-bg lighten-4</div>
+      <div class="light-green-bg lighten-3 black-text">light-green-bg lighten-3</div>
+      <div class="light-green-bg lighten-2 black-text">light-green-bg lighten-2</div>
+      <div class="light-green-bg lighten-1 black-text">light-green-bg lighten-1</div>
+      <div class="light-green-bg darken-4 white-text">light-green-bg darken-4</div>
+      <div class="light-green-bg darken-3 white-text">light-green-bg darken-3</div>
+      <div class="light-green-bg darken-2 white-text">light-green-bg darken-2</div>
+      <div class="light-green-bg darken-1 white-text">light-green-bg darken-1</div>
+      <div class="light-green-bg accent-4 white-text">light-green-bg accent-4</div>
+      <div class="light-green-bg accent-3 white-text">light-green-bg accent-3</div>
+      <div class="light-green-bg accent-2 white-text">light-green-bg accent-2</div>
+      <div class="light-green-bg accent-1 white-text">light-green-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="lime-bg white-text">lime-bg</div>
+      <div class="lime-bg lighten-5 black-text">lime-bg lighten-5</div>
+      <div class="lime-bg lighten-4 black-text">lime-bg lighten-4</div>
+      <div class="lime-bg lighten-3 black-text">lime-bg lighten-3</div>
+      <div class="lime-bg lighten-2 black-text">lime-bg lighten-2</div>
+      <div class="lime-bg lighten-1 black-text">lime-bg lighten-1</div>
+      <div class="lime-bg darken-4 white-text">lime-bg darken-4</div>
+      <div class="lime-bg darken-3 white-text">lime-bg darken-3</div>
+      <div class="lime-bg darken-2 white-text">lime-bg darken-2</div>
+      <div class="lime-bg darken-1 white-text">lime-bg darken-1</div>
+      <div class="lime-bg accent-4 white-text">lime-bg accent-4</div>
+      <div class="lime-bg accent-3 white-text">lime-bg accent-3</div>
+      <div class="lime-bg accent-2 white-text">lime-bg accent-2</div>
+      <div class="lime-bg accent-1 white-text">lime-bg accent-1</div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm-3 colors">
+      <div class="yellow-bg white-text">yellow-bg</div>
+      <div class="yellow-bg lighten-5 black-text">yellow-bg lighten-5</div>
+      <div class="yellow-bg lighten-4 black-text">yellow-bg lighten-4</div>
+      <div class="yellow-bg lighten-3 black-text">yellow-bg lighten-3</div>
+      <div class="yellow-bg lighten-2 black-text">yellow-bg lighten-2</div>
+      <div class="yellow-bg lighten-1 black-text">yellow-bg lighten-1</div>
+      <div class="yellow-bg darken-4 white-text">yellow-bg darken-4</div>
+      <div class="yellow-bg darken-3 white-text">yellow-bg darken-3</div>
+      <div class="yellow-bg darken-2 white-text">yellow-bg darken-2</div>
+      <div class="yellow-bg darken-1 white-text">yellow-bg darken-1</div>
+      <div class="yellow-bg accent-4 white-text">yellow-bg accent-4</div>
+      <div class="yellow-bg accent-3 white-text">yellow-bg accent-3</div>
+      <div class="yellow-bg accent-2 white-text">yellow-bg accent-2</div>
+      <div class="yellow-bg accent-1 white-text">yellow-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="amber-bg white-text">amber-bg</div>
+      <div class="amber-bg lighten-5 black-text">amber-bg lighten-5</div>
+      <div class="amber-bg lighten-4 black-text">amber-bg lighten-4</div>
+      <div class="amber-bg lighten-3 black-text">amber-bg lighten-3</div>
+      <div class="amber-bg lighten-2 black-text">amber-bg lighten-2</div>
+      <div class="amber-bg lighten-1 black-text">amber-bg lighten-1</div>
+      <div class="amber-bg darken-4 white-text">amber-bg darken-4</div>
+      <div class="amber-bg darken-3 white-text">amber-bg darken-3</div>
+      <div class="amber-bg darken-2 white-text">amber-bg darken-2</div>
+      <div class="amber-bg darken-1 white-text">amber-bg darken-1</div>
+      <div class="amber-bg accent-4 white-text">amber-bg accent-4</div>
+      <div class="amber-bg accent-3 white-text">amber-bg accent-3</div>
+      <div class="amber-bg accent-2 white-text">amber-bg accent-2</div>
+      <div class="amber-bg accent-1 white-text">amber-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="orange-bg white-text">orange-bg</div>
+      <div class="orange-bg lighten-5 black-text">orange-bg lighten-5</div>
+      <div class="orange-bg lighten-4 black-text">orange-bg lighten-4</div>
+      <div class="orange-bg lighten-3 black-text">orange-bg lighten-3</div>
+      <div class="orange-bg lighten-2 black-text">orange-bg lighten-2</div>
+      <div class="orange-bg lighten-1 black-text">orange-bg lighten-1</div>
+      <div class="orange-bg darken-4 white-text">orange-bg darken-4</div>
+      <div class="orange-bg darken-3 white-text">orange-bg darken-3</div>
+      <div class="orange-bg darken-2 white-text">orange-bg darken-2</div>
+      <div class="orange-bg darken-1 white-text">orange-bg darken-1</div>
+      <div class="orange-bg accent-4 white-text">orange-bg accent-4</div>
+      <div class="orange-bg accent-3 white-text">orange-bg accent-3</div>
+      <div class="orange-bg accent-2 white-text">orange-bg accent-2</div>
+      <div class="orange-bg accent-1 white-text">orange-bg accent-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="deep-orange-bg white-text">deep-orange-bg</div>
+      <div class="deep-orange-bg lighten-5 black-text">deep-orange-bg lighten-5</div>
+      <div class="deep-orange-bg lighten-4 black-text">deep-orange-bg lighten-4</div>
+      <div class="deep-orange-bg lighten-3 black-text">deep-orange-bg lighten-3</div>
+      <div class="deep-orange-bg lighten-2 black-text">deep-orange-bg lighten-2</div>
+      <div class="deep-orange-bg lighten-1 black-text">deep-orange-bg lighten-1</div>
+      <div class="deep-orange-bg darken-4 white-text">deep-orange-bg darken-4</div>
+      <div class="deep-orange-bg darken-3 white-text">deep-orange-bg darken-3</div>
+      <div class="deep-orange-bg darken-2 white-text">deep-orange-bg darken-2</div>
+      <div class="deep-orange-bg darken-1 white-text">deep-orange-bg darken-1</div>
+      <div class="deep-orange-bg accent-4 white-text">deep-orange-bg accent-4</div>
+      <div class="deep-orange-bg accent-3 white-text">deep-orange-bg accent-3</div>
+      <div class="deep-orange-bg accent-2 white-text">deep-orange-bg accent-2</div>
+      <div class="deep-orange-bg accent-1 white-text">deep-orange-bg accent-1</div>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-sm-3 colors">
+      <div class="brown-bg white-text">brown-bg</div>
+      <div class="brown-bg lighten-5 black-text">brown-bg lighten-5</div>
+      <div class="brown-bg lighten-4 black-text">brown-bg lighten-4</div>
+      <div class="brown-bg lighten-3 black-text">brown-bg lighten-3</div>
+      <div class="brown-bg lighten-2 black-text">brown-bg lighten-2</div>
+      <div class="brown-bg lighten-1 black-text">brown-bg lighten-1</div>
+      <div class="brown-bg darken-4 white-text">brown-bg darken-4</div>
+      <div class="brown-bg darken-3 white-text">brown-bg darken-3</div>
+      <div class="brown-bg darken-2 white-text">brown-bg darken-2</div>
+      <div class="brown-bg darken-1 white-text">brown-bg darken-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+    <div class="grey-bg white-text">grey-bg</div>
+    <div class="grey-bg lighten-5 black-text">grey-bg lighten-5</div>
+    <div class="grey-bg lighten-4 black-text">grey-bg lighten-4</div>
+    <div class="grey-bg lighten-3 black-text">grey-bg lighten-3</div>
+    <div class="grey-bg lighten-2 black-text">grey-bg lighten-2</div>
+    <div class="grey-bg lighten-1 black-text">grey-bg lighten-1</div>
+    <div class="grey-bg darken-4 white-text">grey-bg darken-4</div>
+    <div class="grey-bg darken-3 white-text">grey-bg darken-3</div>
+    <div class="grey-bg darken-2 white-text">grey-bg darken-2</div>
+    <div class="grey-bg darken-1 white-text">grey-bg darken-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+    <div class="blue-grey-bg white-text">blue-grey-bg</div>
+    <div class="blue-grey-bg lighten-5 black-text">blue-grey-bg lighten-5</div>
+    <div class="blue-grey-bg lighten-4 black-text">blue-grey-bg lighten-4</div>
+    <div class="blue-grey-bg lighten-3 black-text">blue-grey-bg lighten-3</div>
+    <div class="blue-grey-bg lighten-2 black-text">blue-grey-bg lighten-2</div>
+    <div class="blue-grey-bg lighten-1 black-text">blue-grey-bg lighten-1</div>
+    <div class="blue-grey-bg darken-4 white-text">blue-grey-bg darken-4</div>
+    <div class="blue-grey-bg darken-3 white-text">blue-grey-bg darken-3</div>
+    <div class="blue-grey-bg darken-2 white-text">blue-grey-bg darken-2</div>
+    <div class="blue-grey-bg darken-1 white-text">blue-grey-bg darken-1</div>
+  </div>
+  <div class="col-sm-3 colors">
+      <div class="black-bg white-text">black-bg</div>
+      <div class="white-bg black-text">white-bg</div>
+      <div class="transparent black-text">transparent</div>
+  </div>
+</div>
+  <h2 id="loaders">Loaders</h2>
+  <p>Add CSS loaders to your website with including just one class in the <code>div</code> element tag.</p>
+  <!-- @formatter:off -->
+{% highlight html %}
+<div class="loader-class"></div>
+{% endhighlight %}
+<!-- @formatter:on -->
+  <p>The following classes yields to the corresponding loaders:</p>
+
+
+  <code>.slack-loader</code><br><br>
+  <div class="slack-loader"></div>
+  <br><hr><br>
+  <code>.clock</code><br><br>
+  <div class="clock"></div>
+  <br><hr><br>
+  <code>.loader3</code><br><br>
+  <div class="loader3"></div>
+  <br><hr><br>
+  <code>.circle-gravity</code><br><br>
+  <div class="circle-gravity"></div>
+  <br><hr><br>
+  <code>.square-juggle</code><br><br>
+  <div class="square-juggle"></div>
+  <br><hr><br>
+  <code>.page-flip</code><br><br>
+  <div class="page-flip"></div>
+
+  <p>More loaders coming up.. Fell free to add more by <a href="https://github.com/midhruvjaink/bootstrap-ext">contributing</a>.
+
+
+</section>

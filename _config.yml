@@ -1,0 +1,63 @@
+name: Bootstrap Extension
+description: Add extra features to your website with the Bootstrap Extension - Colors, Loaders and more. 
+version: 0.2.0
+license: MIT License
+licenseUrl: http://opensource.org/licenses/MIT
+favicon: png
+
+download:
+  popup: true
+  url: https://codeload.github.com/midhruvjaink/bootstrap-ext/zip/master
+  bower: jekyll-bootstrap-doc
+  npm: jekyll-bootstrap-doc
+  cdn:
+    url: https://cdnjs.com/libraries/jekyll-bootstrap-doc
+    img: https://alemangui.github.io/pizzicato/img/cdnjs.svg
+    name: cdnjs
+
+# set this to true to replace the generated header navbar by _includes/navbar.html
+customNavBar: false
+
+headerLinks:
+  - title: GitHub
+    url: https://github.com/midhruvjaink/bootstrap-ext
+  - title: Twitter
+    url: https://twitter.com/midhruvjaink
+
+# list if additional links on the footer
+footerLinks:
+  - title: Releases
+    url: https://github.com/midhruvjaink/bootstrap-ext/releases
+  - title: Issues
+    url: https://github.com/midhruvjaink/bootstrap-ext/issues
+
+# header
+header:
+  color1: "#080331"
+  color2: "#673051"
+  trianglify: true
+
+# google analytics
+analytics:
+  account:
+  domain:
+
+# github buttons
+githubButton:
+  user: midhruvjaink
+  repo: bootstrap-ext
+
+# twitter buttons
+twitter:
+  enabled: true
+  via: midhruvjaink
+  hash: bootstrap-ext
+  account: midhruvjaink
+
+# facebook buttons
+facebook:
+  enabled: true
+  profileUrl: midhruvjaink
+
+
+exclude: ['README.md', 'LICENSE', 'bower.json', 'Gemfile.lock', 'Gemfile']
